@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RootFolder label="COREGEN" treetype="folder" language="COREGEN">
+	<Folder label="VERILOG Component Instantiation" treetype="folder">
+		<Template label="mmmmm" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+mmmmm YourInstanceName (
+    .clk(clk),
+    .q(q));
+
+ 
+		</Template>
+	</Folder>
+	<Folder label="VHDL Component Instantiation" treetype="folder">
+		<Template label="mmmmm" treetype="template">
+ 
+ 
+-- The following code must appear in the VHDL architecture header:
+ 
+component mmmmm
+    port (
+    clk: IN std_logic;
+    q: OUT std_logic_VECTOR(15 downto 0));
+end component;
+
+
+
+ 
+-------------------------------------------------------------
+ 
+-- The following code must appear in the VHDL architecture body.
+-- Substitute your own instance name and net names.
+ 
+your_instance_name : mmmmm
+        port map (
+            clk =&gt; clk,
+            q =&gt; q);
+ 
+		</Template>
+	</Folder>
+</RootFolder>

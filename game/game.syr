@@ -1,0 +1,906 @@
+Release 8.2i - xst I.31
+Copyright (c) 1995-2006 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to ./xst/projnav.tmp
+CPU : 0.00 / 1.81 s | Elapsed : 0.00 / 2.00 s
+ 
+--> Parameter xsthdpdir set to ./xst
+CPU : 0.00 / 1.81 s | Elapsed : 0.00 / 2.00 s
+ 
+--> Reading design: game.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+     9.1) Device utilization summary
+     9.2) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "game.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "game"
+Output Format                      : NGC
+Target Device                      : xc3s100e-4-tq144
+
+---- Source Options
+Top Module Name                    : game
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+Multiplier Style                   : auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Pack IO Registers into IOBs        : auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : NO
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Write Timing Constraints           : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+lso                                : game.lso
+Read Cores                         : YES
+cross_clock_analysis               : NO
+verilog2001                        : YES
+safe_implementation                : No
+Optimize Instantiated Primitives   : NO
+use_clock_enable                   : Yes
+use_sync_set                       : Yes
+use_sync_reset                     : Yes
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "E:/game/mmmmm.vhd" in Library work.
+Architecture mmmmm_a of Entity mmmmm is up to date.
+Compiling vhdl file "E:/game/game.vhd" in Library work.
+Architecture behavioral of Entity game is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <game> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mmmmm> in library <work> (architecture <mmmmm_a>).
+
+Building hierarchy successfully finished.
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <game> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "E:/game/game.vhd" line 74: The following signals are missing in the process sensitivity list:
+   led.
+WARNING:Xst:819 - "E:/game/game.vhd" line 111: The following signals are missing in the process sensitivity list:
+   reset, press, led.
+Entity <game> analyzed. Unit <game> generated.
+
+Analyzing Entity <mmmmm> in library <work> (Architecture <mmmmm_a>).
+Entity <mmmmm> analyzed. Unit <mmmmm> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <mmmmm>.
+    Related source file is "E:/game/mmmmm.vhd".
+    Found 1-bit register for signal <q>.
+    Found 25-bit up counter for signal <q1>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <mmmmm> synthesized.
+
+
+Synthesizing Unit <game>.
+    Related source file is "E:/game/game.vhd".
+WARNING:Xst:737 - Found 4-bit latch for signal <flag1>.
+WARNING:Xst:737 - Found 4-bit latch for signal <flag2>.
+WARNING:Xst:737 - Found 32-bit latch for signal <flag3>.
+WARNING:Xst:737 - Found 32-bit latch for signal <flag4>.
+WARNING:Xst:737 - Found 1-bit latch for signal <led<0>>.
+WARNING:Xst:737 - Found 1-bit latch for signal <led<1>>.
+WARNING:Xst:737 - Found 1-bit latch for signal <led<2>>.
+WARNING:Xst:737 - Found 1-bit latch for signal <led<3>>.
+    Found 4x1-bit ROM for signal <led<7>>.
+    Found 16x7-bit ROM for signal <temp1>.
+    Found 16x7-bit ROM for signal <temp2>.
+    Found 4x1-bit ROM for signal <led<4>>.
+    Found 4x1-bit ROM for signal <$mux0046>.
+    Found 4x1-bit ROM for signal <$mux0049>.
+WARNING:Xst:737 - Found 7-bit latch for signal <flag>.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 7-bit register for signal <seg>.
+    Found 4-bit register for signal <an>.
+    Found 32-bit adder for signal <$add0000> created at line 176.
+    Found 32-bit subtractor for signal <$addsub0000> created at line 175.
+    Found 32-bit adder for signal <$addsub0001> created at line 176.
+    Found 32-bit subtractor for signal <$addsub0002> created at line 175.
+    Found 32-bit subtractor for signal <$addsub0003> created at line 175.
+    Found 32-bit adder for signal <$addsub0004> created at line 176.
+    Found 32-bit subtractor for signal <$addsub0005> created at line 175.
+    Found 32-bit subtractor for signal <$addsub0006> created at line 175.
+    Found 32-bit adder for signal <$addsub0007> created at line 176.
+    Found 32-bit adder for signal <$addsub0008> created at line 176.
+    Found 32-bit subtractor for signal <$addsub0009> created at line 175.
+    Found 32-bit subtractor for signal <$addsub0010> created at line 175.
+    Found 32-bit adder for signal <$addsub0011> created at line 176.
+    Found 32-bit adder for signal <$addsub0012> created at line 176.
+    Found 32-bit subtractor for signal <$addsub0013> created at line 175.
+    Found 32-bit subtractor for signal <$addsub0014> created at line 175.
+    Found 32-bit adder for signal <$addsub0015> created at line 176.
+    Found 32-bit adder for signal <$addsub0016> created at line 176.
+    Found 8-bit adder for signal <$addsub0017> created at line 172.
+    Found 8-bit comparator greater for signal <$cmp_gt0000> created at line 172.
+    Found 32-bit comparator greater for signal <$cmp_gt0001> created at line 174.
+    Found 32-bit comparator greater for signal <$cmp_gt0002> created at line 174.
+    Found 32-bit comparator greater for signal <$cmp_gt0003> created at line 174.
+    Found 32-bit comparator greater for signal <$cmp_gt0004> created at line 174.
+    Found 32-bit comparator greater for signal <$cmp_gt0005> created at line 174.
+    Found 32-bit comparator greater for signal <$cmp_gt0006> created at line 174.
+    Found 32-bit comparator greater for signal <$cmp_gt0007> created at line 174.
+    Found 32-bit comparator greater for signal <$cmp_gt0008> created at line 174.
+    Found 32-bit comparator greater for signal <$cmp_gt0009> created at line 174.
+    Found 4-bit comparator lessequal for signal <$cmp_le0000> created at line 194.
+    Found 4-bit comparator lessequal for signal <$cmp_le0001> created at line 190.
+    Found 32-bit 4-to-1 multiplexer for signal <$mux0031> created at line 174.
+    Found 7-bit adder for signal <$share0000>.
+    Found 32-bit adder for signal <$sub0000> created at line 174.
+    Found 32-bit adder for signal <$sub0001> created at line 174.
+    Found 32-bit adder for signal <$sub0002> created at line 174.
+    Found 32-bit adder for signal <$sub0003> created at line 174.
+    Found 32-bit adder for signal <$sub0004> created at line 174.
+    Found 32-bit adder for signal <$sub0005> created at line 174.
+    Found 32-bit adder for signal <$sub0006> created at line 174.
+    Found 32-bit adder for signal <$sub0007> created at line 174.
+    Found 32-bit adder for signal <$sub0008> created at line 174.
+    Summary:
+	inferred   6 ROM(s).
+	inferred   7 D-type flip-flop(s).
+	inferred  29 Adder/Subtractor(s).
+	inferred  12 Comparator(s).
+	inferred  32 Multiplexer(s).
+Unit <game> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 6
+ 16x7-bit ROM                                          : 2
+ 4x1-bit ROM                                           : 4
+# Adders/Subtractors                                   : 29
+ 32-bit adder                                          : 18
+ 32-bit subtractor                                     : 9
+ 7-bit adder                                           : 1
+ 8-bit adder                                           : 1
+# Counters                                             : 1
+ 25-bit up counter                                     : 1
+# Registers                                            : 3
+ 1-bit register                                        : 1
+ 4-bit register                                        : 1
+ 7-bit register                                        : 1
+# Latches                                              : 9
+ 1-bit latch                                           : 4
+ 32-bit latch                                          : 2
+ 4-bit latch                                           : 2
+ 7-bit latch                                           : 1
+# Comparators                                          : 12
+ 32-bit comparator greater                             : 9
+ 4-bit comparator lessequal                            : 2
+ 8-bit comparator greater                              : 1
+# Multiplexers                                         : 1
+ 32-bit 4-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Loading device for application Rf_Device from file '3s100e.nph' in environment D:\Xilinx.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 6
+ 16x7-bit ROM                                          : 2
+ 4x1-bit ROM                                           : 4
+# Adders/Subtractors                                   : 29
+ 32-bit adder                                          : 18
+ 32-bit subtractor                                     : 9
+ 7-bit adder                                           : 1
+ 8-bit adder                                           : 1
+# Counters                                             : 1
+ 25-bit up counter                                     : 1
+# Registers                                            : 12
+ Flip-Flops                                            : 12
+# Latches                                              : 9
+ 1-bit latch                                           : 4
+ 32-bit latch                                          : 2
+ 4-bit latch                                           : 2
+ 7-bit latch                                           : 1
+# Comparators                                          : 12
+ 32-bit comparator greater                             : 9
+ 4-bit comparator lessequal                            : 2
+ 8-bit comparator greater                              : 1
+# Multiplexers                                         : 1
+ 32-bit 4-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <an_2> in Unit <game> is equivalent to the following FF/Latch, which will be removed : <an_3> 
+WARNING:Xst:1710 - FF/Latch  <an_2> (without init value) has a constant value of 1 in block <game>.
+WARNING:Xst:1291 - FF/Latch <flag4_31> is unconnected in block <game>.
+WARNING:Xst:1291 - FF/Latch <flag4_30> is unconnected in block <game>.
+WARNING:Xst:1291 - FF/Latch <flag4_29> is unconnected in block <game>.
+WARNING:Xst:1291 - FF/Latch <flag4_28> is unconnected in block <game>.
+WARNING:Xst:1291 - FF/Latch <flag4_27> is unconnected in block <game>.
+WARNING:Xst:1291 - FF/Latch <flag4_26> is unconnected in block <game>.
+WARNING:Xst:1291 - FF/Latch <flag4_25> is unconnected in block <game>.
+WARNING:Xst:1291 - FF/Latch <flag4_24> is unconnected in block <game>.
+WARNING:Xst:1291 - FF/Latch <flag4_23> is unconnected in block <game>.
+WARNING:Xst:1291 - FF/Latch <flag4_22> is unconnected in block <game>.
+WARNING:Xst:1291 - FF/Latch <flag4_21> is unconnected in block <game>.
+WARNING:Xst:1291 - FF/Latch <flag4_20> is unconnected in block <game>.
+WARNING:Xst:1291 - FF/Latch <flag4_19> is unconnected in block <game>.
+WARNING:Xst:1291 - FF/Latch <flag4_18> is unconnected in block <game>.
+WARNING:Xst:1291 - FF/Latch <flag4_17> is unconnected in block <game>.
+WARNING:Xst:1291 - FF/Latch <flag4_16> is unconnected in block <game>.
+WARNING:Xst:1291 - FF/Latch <flag4_15> is unconnected in block <game>.
+WARNING:Xst:1291 - FF/Latch <flag4_14> is unconnected in block <game>.
+WARNING:Xst:1291 - FF/Latch <flag4_13> is unconnected in block <game>.
+WARNING:Xst:1291 - FF/Latch <flag4_12> is unconnected in block <game>.
+WARNING:Xst:1291 - FF/Latch <flag4_11> is unconnected in block <game>.
+WARNING:Xst:1291 - FF/Latch <flag4_10> is unconnected in block <game>.
+WARNING:Xst:1291 - FF/Latch <flag4_9> is unconnected in block <game>.
+WARNING:Xst:1291 - FF/Latch <flag4_8> is unconnected in block <game>.
+WARNING:Xst:1291 - FF/Latch <flag4_7> is unconnected in block <game>.
+WARNING:Xst:1291 - FF/Latch <flag4_6> is unconnected in block <game>.
+WARNING:Xst:1291 - FF/Latch <flag4_5> is unconnected in block <game>.
+WARNING:Xst:1291 - FF/Latch <flag4_4> is unconnected in block <game>.
+INFO:Xst:2261 - The FF/Latch <flag2_2> in Unit <game> is equivalent to the following FF/Latch, which will be removed : <flag4_2> 
+INFO:Xst:2261 - The FF/Latch <flag1_2> in Unit <game> is equivalent to the following FF/Latch, which will be removed : <flag3_2> 
+INFO:Xst:2261 - The FF/Latch <flag1_3> in Unit <game> is equivalent to the following FF/Latch, which will be removed : <flag3_3> 
+INFO:Xst:2261 - The FF/Latch <flag2_1> in Unit <game> is equivalent to the following FF/Latch, which will be removed : <flag4_1> 
+INFO:Xst:2261 - The FF/Latch <flag2_3> in Unit <game> is equivalent to the following FF/Latch, which will be removed : <flag4_3> 
+INFO:Xst:2261 - The FF/Latch <flag1_1> in Unit <game> is equivalent to the following FF/Latch, which will be removed : <flag3_1> 
+
+Optimizing unit <game> ...
+WARNING:Xst:1426 - The value init of the FF/Latch flag1_0 hinder the constant cleaning in the block game.
+   You should achieve better results by setting this init to 0.
+WARNING:Xst:1293 - FF/Latch  <flag3_0> has a constant value of 0 in block <game>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block game, actual ratio is 60.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 35
+ Flip-Flops                                            : 35
+
+=========================================================================
+
+=========================================================================
+*                          Partition Report                             *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : game.ngr
+Top Level Output File Name         : game
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : NO
+
+Design Statistics
+# IOs                              : 25
+
+Cell Usage :
+# BELS                             : 2365
+#      GND                         : 1
+#      INV                         : 72
+#      LUT1                        : 32
+#      LUT2                        : 8
+#      LUT3                        : 734
+#      LUT3_D                      : 105
+#      LUT3_L                      : 31
+#      LUT4                        : 91
+#      LUT4_D                      : 1
+#      MUXCY                       : 670
+#      MUXF5                       : 10
+#      VCC                         : 1
+#      XORCY                       : 609
+# FlipFlops/Latches                : 83
+#      FDE                         : 7
+#      FDR                         : 26
+#      FDRE                        : 1
+#      FDSE                        : 1
+#      LD                          : 44
+#      LDCP                        : 4
+# Clock Buffers                    : 3
+#      BUFG                        : 1
+#      BUFGP                       : 2
+# IO Buffers                       : 23
+#      IBUF                        : 4
+#      OBUF                        : 19
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100etq144-4 
+
+ Number of Slices:                     552  out of    960    57%  
+ Number of Slice Flip Flops:            83  out of   1920     4%  
+ Number of 4 input LUTs:              1074  out of   1920    55%  
+ Number of IOs:                         25
+ Number of bonded IOBs:                 25  out of    108    23%  
+ Number of GCLKs:                        3  out of     24    12%  
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 35    |
+reset                              | BUFGP                  | 4     |
+_not0025(_not002588:O)             | NONE(*)(flag_3)        | 7     |
+_cmp_gt00001(_cmp_gt00001:O)       | BUFG(*)(flag3_30)      | 37    |
+-----------------------------------+------------------------+-------+
+(*) These 2 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+led<3>__and0000(led<3>__and00001:O)| NONE(led<3>)           | 1     |
+led<3>__and0001(led<3>__and00011:O)| NONE(led<3>)           | 1     |
+led<0>__and0000(led<0>__and00001:O)| NONE(led<0>)           | 1     |
+led<0>__and0001(led<0>__and00011:O)| NONE(led<0>)           | 1     |
+led<1>__and0000(led<1>__and00001:O)| NONE(led<1>)           | 1     |
+led<1>__and0001(led<1>__and00011:O)| NONE(led<1>)           | 1     |
+led<2>__and0000(led<2>__and00001:O)| NONE(led<2>)           | 1     |
+led<2>__and0001(led<2>__and00011:O)| NONE(led<2>)           | 1     |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 77.573ns (Maximum Frequency: 12.891MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 8.385ns
+   Maximum combinational path delay: 8.837ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 7.672ns (frequency: 130.349MHz)
+  Total number of paths / destination ports: 1002 / 69
+-------------------------------------------------------------------------
+Delay:               7.672ns (Levels of Logic = 9)
+  Source:            L1/q1_5 (FF)
+  Destination:       L1/q (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: L1/q1_5 to L1/q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.591   1.052  L1/q1_5 (L1/q1_5)
+     LUT1:I0->O            1   0.704   0.000  L1/q1_5_rt1 (L1/q1_5_rt1)
+     MUXCY:S->O            1   0.464   0.000  L1/_cmp_eq0000_wg_cy<0> (L1/_cmp_eq0000_wg_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  L1/_cmp_eq0000_wg_cy<1> (L1/_cmp_eq0000_wg_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  L1/_cmp_eq0000_wg_cy<2> (L1/_cmp_eq0000_wg_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  L1/_cmp_eq0000_wg_cy<3> (L1/_cmp_eq0000_wg_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  L1/_cmp_eq0000_wg_cy<4> (L1/_cmp_eq0000_wg_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  L1/_cmp_eq0000_wg_cy<5> (L1/_cmp_eq0000_wg_cy<5>)
+     MUXCY:CI->O          26   0.331   1.819  L1/_cmp_eq0000_wg_cy<6> (L1/_cmp_eq0000_wg_cy<6>)
+     INV:I->O              1   0.704   0.801  L1/_cmp_eq0000_inv1_INV_0 (L1/_cmp_eq0000_inv)
+     FDR:R                     0.911          L1/q
+    ----------------------------------------
+    Total                      7.672ns (4.000ns logic, 3.672ns route)
+                                       (52.1% logic, 47.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'reset'
+  Clock period: 4.650ns (frequency: 215.054MHz)
+  Total number of paths / destination ports: 16 / 4
+-------------------------------------------------------------------------
+Delay:               4.650ns (Levels of Logic = 2)
+  Source:            led<0> (LATCH)
+  Destination:       led<3> (LATCH)
+  Source Clock:      reset falling
+  Destination Clock: reset falling
+
+  Data Path: led<0> to led<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDCP:G->Q            16   0.676   1.272  led<0> (led_0_OBUF)
+     LUT4:I2->O            3   0.704   0.986  Mrom__mux00491 (N19)
+     LUT2:I1->O            1   0.704   0.000  _mux00541 (_mux0054)
+     LDCP:D                    0.308          led<3>
+    ----------------------------------------
+    Total                      4.650ns (2.392ns logic, 2.258ns route)
+                                       (51.4% logic, 48.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock '_not0025'
+  Clock period: 4.470ns (frequency: 223.714MHz)
+  Total number of paths / destination ports: 28 / 7
+-------------------------------------------------------------------------
+Delay:               4.470ns (Levels of Logic = 2)
+  Source:            flag_2 (LATCH)
+  Destination:       flag_5 (LATCH)
+  Source Clock:      _not0025 falling
+  Destination Clock: _not0025 falling
+
+  Data Path: flag_2 to flag_5
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               4   0.676   1.092  flag_2 (flag_2)
+     LUT4:I0->O            3   0.704   0.986  Madd__share0000_cy<3>11 (Madd__share0000_cy<3>)
+     LUT3:I1->O            1   0.704   0.000  Madd__share0000_xor<5>11 (_share0000<5>)
+     LD:D                      0.308          flag_5
+    ----------------------------------------
+    Total                      4.470ns (2.392ns logic, 2.078ns route)
+                                       (53.5% logic, 46.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock '_cmp_gt00001'
+  Clock period: 77.573ns (frequency: 12.891MHz)
+  Total number of paths / destination ports: 82725288158068758000000000 / 36
+-------------------------------------------------------------------------
+Delay:               77.573ns (Levels of Logic = 279)
+  Source:            flag1_3 (LATCH)
+  Destination:       flag2_3 (LATCH)
+  Source Clock:      _cmp_gt00001 falling
+  Destination Clock: _cmp_gt00001 falling
+
+  Data Path: flag1_3 to flag2_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q              12   0.676   1.293  flag1_3 (flag1_3)
+     LUT1:I0->O            1   0.704   0.000  flag1_3_rt1 (flag1_3_rt1)
+     MUXCY:S->O            1   0.464   0.000  Madd__sub0001_cy<3> (Madd__sub0001_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0001_cy<4> (Madd__sub0001_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0001_cy<5> (Madd__sub0001_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0001_cy<6> (Madd__sub0001_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0001_cy<7> (Madd__sub0001_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0001_cy<8> (Madd__sub0001_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0001_cy<9> (Madd__sub0001_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0001_cy<10> (Madd__sub0001_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0001_cy<11> (Madd__sub0001_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0001_cy<12> (Madd__sub0001_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0001_cy<13> (Madd__sub0001_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0001_cy<14> (Madd__sub0001_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0001_cy<15> (Madd__sub0001_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0001_cy<16> (Madd__sub0001_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0001_cy<17> (Madd__sub0001_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0001_cy<18> (Madd__sub0001_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0001_cy<19> (Madd__sub0001_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0001_cy<20> (Madd__sub0001_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0001_cy<21> (Madd__sub0001_cy<21>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0001_cy<22> (Madd__sub0001_cy<22>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0001_cy<23> (Madd__sub0001_cy<23>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0001_cy<24> (Madd__sub0001_cy<24>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0001_cy<25> (Madd__sub0001_cy<25>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0001_cy<26> (Madd__sub0001_cy<26>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0001_cy<27> (Madd__sub0001_cy<27>)
+     XORCY:CI->O           1   0.804   0.976  Madd__sub0001_xor<28> (_sub0001<28>)
+     LUT3:I0->O            1   0.704   0.000  Mcompar__cmp_gt0002_lut<7> (N324)
+     MUXCY:S->O            1   0.464   0.000  Mcompar__cmp_gt0002_cy<7> (Mcompar__cmp_gt0002_cy<7>)
+     MUXCY:CI->O         103   0.459   2.295  Mcompar__cmp_gt0002_cy<8> (Mcompar__cmp_gt0002_cy<8>)
+     LUT3:I2->O            1   0.704   0.000  _not0016<2>1 (_not0016<2>)
+     MUXCY:S->O            1   0.464   0.000  Madd__sub0000_cy<2> (Madd__sub0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0000_cy<3> (Madd__sub0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0000_cy<4> (Madd__sub0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0000_cy<5> (Madd__sub0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0000_cy<6> (Madd__sub0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0000_cy<7> (Madd__sub0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0000_cy<8> (Madd__sub0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0000_cy<9> (Madd__sub0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0000_cy<10> (Madd__sub0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0000_cy<11> (Madd__sub0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0000_cy<12> (Madd__sub0000_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0000_cy<13> (Madd__sub0000_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0000_cy<14> (Madd__sub0000_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0000_cy<15> (Madd__sub0000_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0000_cy<16> (Madd__sub0000_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0000_cy<17> (Madd__sub0000_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0000_cy<18> (Madd__sub0000_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0000_cy<19> (Madd__sub0000_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0000_cy<20> (Madd__sub0000_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0000_cy<21> (Madd__sub0000_cy<21>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0000_cy<22> (Madd__sub0000_cy<22>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0000_cy<23> (Madd__sub0000_cy<23>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0000_cy<24> (Madd__sub0000_cy<24>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0000_cy<25> (Madd__sub0000_cy<25>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0000_cy<26> (Madd__sub0000_cy<26>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0000_cy<27> (Madd__sub0000_cy<27>)
+     XORCY:CI->O           1   0.804   0.976  Madd__sub0000_xor<28> (_sub0000<28>)
+     LUT3:I0->O            1   0.704   0.000  Mcompar__cmp_gt0001_lut<7> (N334)
+     MUXCY:S->O            1   0.464   0.000  Mcompar__cmp_gt0001_cy<7> (Mcompar__cmp_gt0001_cy<7>)
+     MUXCY:CI->O         102   0.459   2.289  Mcompar__cmp_gt0001_cy<8> (Mcompar__cmp_gt0001_cy<8>)
+     LUT3:I2->O            1   0.704   0.000  _not0018<2>1 (_not0018<2>)
+     MUXCY:S->O            1   0.464   0.000  Madd__sub0002_cy<2> (Madd__sub0002_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0002_cy<3> (Madd__sub0002_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0002_cy<4> (Madd__sub0002_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0002_cy<5> (Madd__sub0002_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0002_cy<6> (Madd__sub0002_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0002_cy<7> (Madd__sub0002_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0002_cy<8> (Madd__sub0002_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0002_cy<9> (Madd__sub0002_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0002_cy<10> (Madd__sub0002_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0002_cy<11> (Madd__sub0002_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0002_cy<12> (Madd__sub0002_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0002_cy<13> (Madd__sub0002_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0002_cy<14> (Madd__sub0002_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0002_cy<15> (Madd__sub0002_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0002_cy<16> (Madd__sub0002_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0002_cy<17> (Madd__sub0002_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0002_cy<18> (Madd__sub0002_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0002_cy<19> (Madd__sub0002_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0002_cy<20> (Madd__sub0002_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0002_cy<21> (Madd__sub0002_cy<21>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0002_cy<22> (Madd__sub0002_cy<22>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0002_cy<23> (Madd__sub0002_cy<23>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0002_cy<24> (Madd__sub0002_cy<24>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0002_cy<25> (Madd__sub0002_cy<25>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0002_cy<26> (Madd__sub0002_cy<26>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0002_cy<27> (Madd__sub0002_cy<27>)
+     XORCY:CI->O           1   0.804   0.976  Madd__sub0002_xor<28> (_sub0002<28>)
+     LUT3:I0->O            1   0.704   0.000  Mcompar__cmp_gt0003_lut<7> (N354)
+     MUXCY:S->O            1   0.464   0.000  Mcompar__cmp_gt0003_cy<7> (Mcompar__cmp_gt0003_cy<7>)
+     MUXCY:CI->O         101   0.459   2.283  Mcompar__cmp_gt0003_cy<8> (Mcompar__cmp_gt0003_cy<8>)
+     LUT3:I2->O            1   0.704   0.000  _not0019<2>1 (_not0019<2>)
+     MUXCY:S->O            1   0.464   0.000  Madd__sub0003_cy<2> (Madd__sub0003_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0003_cy<3> (Madd__sub0003_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0003_cy<4> (Madd__sub0003_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0003_cy<5> (Madd__sub0003_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0003_cy<6> (Madd__sub0003_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0003_cy<7> (Madd__sub0003_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0003_cy<8> (Madd__sub0003_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0003_cy<9> (Madd__sub0003_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0003_cy<10> (Madd__sub0003_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0003_cy<11> (Madd__sub0003_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0003_cy<12> (Madd__sub0003_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0003_cy<13> (Madd__sub0003_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0003_cy<14> (Madd__sub0003_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0003_cy<15> (Madd__sub0003_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0003_cy<16> (Madd__sub0003_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0003_cy<17> (Madd__sub0003_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0003_cy<18> (Madd__sub0003_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0003_cy<19> (Madd__sub0003_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0003_cy<20> (Madd__sub0003_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0003_cy<21> (Madd__sub0003_cy<21>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0003_cy<22> (Madd__sub0003_cy<22>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0003_cy<23> (Madd__sub0003_cy<23>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0003_cy<24> (Madd__sub0003_cy<24>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0003_cy<25> (Madd__sub0003_cy<25>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0003_cy<26> (Madd__sub0003_cy<26>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0003_cy<27> (Madd__sub0003_cy<27>)
+     XORCY:CI->O           1   0.804   0.976  Madd__sub0003_xor<28> (_sub0003<28>)
+     LUT3:I0->O            1   0.704   0.000  Mcompar__cmp_gt0004_lut<7> (N364)
+     MUXCY:S->O            1   0.464   0.000  Mcompar__cmp_gt0004_cy<7> (Mcompar__cmp_gt0004_cy<7>)
+     MUXCY:CI->O         102   0.459   2.289  Mcompar__cmp_gt0004_cy<8> (Mcompar__cmp_gt0004_cy<8>)
+     LUT3:I2->O            1   0.704   0.000  _not0021<2>1 (_not0021<2>)
+     MUXCY:S->O            1   0.464   0.000  Madd__sub0005_cy<2> (Madd__sub0005_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0005_cy<3> (Madd__sub0005_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0005_cy<4> (Madd__sub0005_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0005_cy<5> (Madd__sub0005_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0005_cy<6> (Madd__sub0005_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0005_cy<7> (Madd__sub0005_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0005_cy<8> (Madd__sub0005_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0005_cy<9> (Madd__sub0005_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0005_cy<10> (Madd__sub0005_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0005_cy<11> (Madd__sub0005_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0005_cy<12> (Madd__sub0005_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0005_cy<13> (Madd__sub0005_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0005_cy<14> (Madd__sub0005_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0005_cy<15> (Madd__sub0005_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0005_cy<16> (Madd__sub0005_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0005_cy<17> (Madd__sub0005_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0005_cy<18> (Madd__sub0005_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0005_cy<19> (Madd__sub0005_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0005_cy<20> (Madd__sub0005_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0005_cy<21> (Madd__sub0005_cy<21>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0005_cy<22> (Madd__sub0005_cy<22>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0005_cy<23> (Madd__sub0005_cy<23>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0005_cy<24> (Madd__sub0005_cy<24>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0005_cy<25> (Madd__sub0005_cy<25>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0005_cy<26> (Madd__sub0005_cy<26>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0005_cy<27> (Madd__sub0005_cy<27>)
+     XORCY:CI->O           1   0.804   0.976  Madd__sub0005_xor<28> (_sub0005<28>)
+     LUT3:I0->O            1   0.704   0.000  Mcompar__cmp_gt0006_lut<7> (N384)
+     MUXCY:S->O            1   0.464   0.000  Mcompar__cmp_gt0006_cy<7> (Mcompar__cmp_gt0006_cy<7>)
+     MUXCY:CI->O         101   0.459   2.283  Mcompar__cmp_gt0006_cy<8> (Mcompar__cmp_gt0006_cy<8>)
+     LUT3:I2->O            1   0.704   0.000  _not0023<2>1 (_not0023<2>)
+     MUXCY:S->O            1   0.464   0.000  Madd__sub0007_cy<2> (Madd__sub0007_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0007_cy<3> (Madd__sub0007_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0007_cy<4> (Madd__sub0007_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0007_cy<5> (Madd__sub0007_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0007_cy<6> (Madd__sub0007_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0007_cy<7> (Madd__sub0007_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0007_cy<8> (Madd__sub0007_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0007_cy<9> (Madd__sub0007_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0007_cy<10> (Madd__sub0007_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0007_cy<11> (Madd__sub0007_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0007_cy<12> (Madd__sub0007_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0007_cy<13> (Madd__sub0007_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0007_cy<14> (Madd__sub0007_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0007_cy<15> (Madd__sub0007_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0007_cy<16> (Madd__sub0007_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0007_cy<17> (Madd__sub0007_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0007_cy<18> (Madd__sub0007_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0007_cy<19> (Madd__sub0007_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0007_cy<20> (Madd__sub0007_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0007_cy<21> (Madd__sub0007_cy<21>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0007_cy<22> (Madd__sub0007_cy<22>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0007_cy<23> (Madd__sub0007_cy<23>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0007_cy<24> (Madd__sub0007_cy<24>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0007_cy<25> (Madd__sub0007_cy<25>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0007_cy<26> (Madd__sub0007_cy<26>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0007_cy<27> (Madd__sub0007_cy<27>)
+     XORCY:CI->O           1   0.804   0.976  Madd__sub0007_xor<28> (_sub0007<28>)
+     LUT3:I0->O            1   0.704   0.000  Mcompar__cmp_gt0008_lut<7> (N374)
+     MUXCY:S->O            1   0.464   0.000  Mcompar__cmp_gt0008_cy<7> (Mcompar__cmp_gt0008_cy<7>)
+     MUXCY:CI->O         102   0.459   2.289  Mcompar__cmp_gt0008_cy<8> (Mcompar__cmp_gt0008_cy<8>)
+     LUT3:I2->O            1   0.704   0.000  _not0020<2>1 (_not0020<2>)
+     MUXCY:S->O            1   0.464   0.000  Madd__sub0004_cy<2> (Madd__sub0004_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0004_cy<3> (Madd__sub0004_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0004_cy<4> (Madd__sub0004_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0004_cy<5> (Madd__sub0004_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0004_cy<6> (Madd__sub0004_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0004_cy<7> (Madd__sub0004_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0004_cy<8> (Madd__sub0004_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0004_cy<9> (Madd__sub0004_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0004_cy<10> (Madd__sub0004_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0004_cy<11> (Madd__sub0004_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0004_cy<12> (Madd__sub0004_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0004_cy<13> (Madd__sub0004_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0004_cy<14> (Madd__sub0004_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0004_cy<15> (Madd__sub0004_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0004_cy<16> (Madd__sub0004_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0004_cy<17> (Madd__sub0004_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0004_cy<18> (Madd__sub0004_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0004_cy<19> (Madd__sub0004_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0004_cy<20> (Madd__sub0004_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0004_cy<21> (Madd__sub0004_cy<21>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0004_cy<22> (Madd__sub0004_cy<22>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0004_cy<23> (Madd__sub0004_cy<23>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0004_cy<24> (Madd__sub0004_cy<24>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0004_cy<25> (Madd__sub0004_cy<25>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0004_cy<26> (Madd__sub0004_cy<26>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0004_cy<27> (Madd__sub0004_cy<27>)
+     XORCY:CI->O           1   0.804   0.976  Madd__sub0004_xor<28> (_sub0004<28>)
+     LUT3:I0->O            1   0.704   0.000  Mcompar__cmp_gt0005_lut<7> (N344)
+     MUXCY:S->O            1   0.464   0.000  Mcompar__cmp_gt0005_cy<7> (Mcompar__cmp_gt0005_cy<7>)
+     MUXCY:CI->O         101   0.459   2.283  Mcompar__cmp_gt0005_cy<8> (Mcompar__cmp_gt0005_cy<8>)
+     LUT3:I2->O            1   0.704   0.000  _not0022<2>1 (_not0022<2>)
+     MUXCY:S->O            1   0.464   0.000  Madd__sub0006_cy<2> (Madd__sub0006_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0006_cy<3> (Madd__sub0006_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0006_cy<4> (Madd__sub0006_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0006_cy<5> (Madd__sub0006_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0006_cy<6> (Madd__sub0006_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0006_cy<7> (Madd__sub0006_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0006_cy<8> (Madd__sub0006_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0006_cy<9> (Madd__sub0006_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0006_cy<10> (Madd__sub0006_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0006_cy<11> (Madd__sub0006_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0006_cy<12> (Madd__sub0006_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0006_cy<13> (Madd__sub0006_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0006_cy<14> (Madd__sub0006_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0006_cy<15> (Madd__sub0006_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0006_cy<16> (Madd__sub0006_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0006_cy<17> (Madd__sub0006_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0006_cy<18> (Madd__sub0006_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0006_cy<19> (Madd__sub0006_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0006_cy<20> (Madd__sub0006_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0006_cy<21> (Madd__sub0006_cy<21>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0006_cy<22> (Madd__sub0006_cy<22>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0006_cy<23> (Madd__sub0006_cy<23>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0006_cy<24> (Madd__sub0006_cy<24>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0006_cy<25> (Madd__sub0006_cy<25>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0006_cy<26> (Madd__sub0006_cy<26>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0006_cy<27> (Madd__sub0006_cy<27>)
+     XORCY:CI->O           1   0.804   0.976  Madd__sub0006_xor<28> (_sub0006<28>)
+     LUT3:I0->O            1   0.704   0.000  Mcompar__cmp_gt0007_lut<7> (N394)
+     MUXCY:S->O            1   0.464   0.000  Mcompar__cmp_gt0007_cy<7> (Mcompar__cmp_gt0007_cy<7>)
+     MUXCY:CI->O         101   0.459   2.283  Mcompar__cmp_gt0007_cy<8> (Mcompar__cmp_gt0007_cy<8>)
+     LUT3:I2->O            1   0.704   0.000  _not0024<2>1 (_not0024<2>)
+     MUXCY:S->O            1   0.464   0.000  Madd__sub0008_cy<2> (Madd__sub0008_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0008_cy<3> (Madd__sub0008_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0008_cy<4> (Madd__sub0008_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0008_cy<5> (Madd__sub0008_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0008_cy<6> (Madd__sub0008_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0008_cy<7> (Madd__sub0008_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0008_cy<8> (Madd__sub0008_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0008_cy<9> (Madd__sub0008_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0008_cy<10> (Madd__sub0008_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0008_cy<11> (Madd__sub0008_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0008_cy<12> (Madd__sub0008_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0008_cy<13> (Madd__sub0008_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0008_cy<14> (Madd__sub0008_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0008_cy<15> (Madd__sub0008_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0008_cy<16> (Madd__sub0008_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0008_cy<17> (Madd__sub0008_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0008_cy<18> (Madd__sub0008_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0008_cy<19> (Madd__sub0008_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0008_cy<20> (Madd__sub0008_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0008_cy<21> (Madd__sub0008_cy<21>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0008_cy<22> (Madd__sub0008_cy<22>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0008_cy<23> (Madd__sub0008_cy<23>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0008_cy<24> (Madd__sub0008_cy<24>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0008_cy<25> (Madd__sub0008_cy<25>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0008_cy<26> (Madd__sub0008_cy<26>)
+     MUXCY:CI->O           1   0.059   0.000  Madd__sub0008_cy<27> (Madd__sub0008_cy<27>)
+     XORCY:CI->O           1   0.804   0.976  Madd__sub0008_xor<28> (_sub0008<28>)
+     LUT3:I0->O            1   0.704   0.000  Mcompar__cmp_gt0009_lut<7> (N404)
+     MUXCY:S->O            1   0.464   0.000  Mcompar__cmp_gt0009_cy<7> (Mcompar__cmp_gt0009_cy<7>)
+     MUXCY:CI->O          35   0.459   1.905  Mcompar__cmp_gt0009_cy<8> (Mcompar__cmp_gt0009_cy<8>)
+     LUT3:I2->O            1   0.704   0.000  _mux0044<2>1 (_mux0044<2>)
+     LD:D                      0.308          flag1_2
+    ----------------------------------------
+    Total                     77.573ns (47.295ns logic, 30.278ns route)
+                                       (61.0% logic, 39.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'reset'
+  Total number of paths / destination ports: 20 / 8
+-------------------------------------------------------------------------
+Offset:              8.385ns (Levels of Logic = 3)
+  Source:            led<0> (LATCH)
+  Destination:       led<4> (PAD)
+  Source Clock:      reset falling
+
+  Data Path: led<0> to led<4>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDCP:G->Q            16   0.676   1.316  led<0> (led_0_OBUF)
+     LUT4:I1->O            2   0.704   0.877  _not002541 (_cmp_eq0002)
+     MUXF5:S->O            1   0.739   0.801  Mrom_led<4>1_f5 (led_4_OBUF)
+     OBUF:I->O                 3.272          led_4_OBUF (led<4>)
+    ----------------------------------------
+    Total                      8.385ns (5.391ns logic, 2.994ns route)
+                                       (64.3% logic, 35.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 9 / 9
+-------------------------------------------------------------------------
+Offset:              4.997ns (Levels of Logic = 1)
+  Source:            an_1 (FF)
+  Destination:       an<1> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: an_1 to an<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDSE:C->Q            10   0.591   1.134  an_1 (an_1)
+     OBUF:I->O                 3.272          an_1_OBUF (an<1>)
+    ----------------------------------------
+    Total                      4.997ns (3.863ns logic, 1.134ns route)
+                                       (77.3% logic, 22.7% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 16 / 4
+-------------------------------------------------------------------------
+Delay:               8.837ns (Levels of Logic = 4)
+  Source:            press<2> (PAD)
+  Destination:       led<7> (PAD)
+
+  Data Path: press<2> to led<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   1.218   1.258  press_2_IBUF (press_2_IBUF)
+     LUT3:I0->O            1   0.704   0.880  Mrom_led<7>1_SW0 (N776)
+     LUT4:I1->O            1   0.704   0.801  Mrom_led<7>1 (led_7_OBUF)
+     OBUF:I->O                 3.272          led_7_OBUF (led<7>)
+    ----------------------------------------
+    Total                      8.837ns (5.898ns logic, 2.939ns route)
+                                       (66.7% logic, 33.3% route)
+
+=========================================================================
+CPU : 71.86 / 73.84 s | Elapsed : 72.00 / 74.00 s
+ 
+--> 
+
+Total memory usage is 262332 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   42 (   0 filtered)
+Number of infos    :   10 (   0 filtered)
+

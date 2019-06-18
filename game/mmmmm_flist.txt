@@ -1,0 +1,11 @@
+# Output products list for <mmmmm>
+mmmmm.asy
+mmmmm_c_counter_binary_v8_0_xst_1.ngc
+mmmmm.edn
+mmmmm.vhd
+mmmmm.vho
+mmmmm.veo
+mmmmm.sym
+mmmmm.v
+mmmmm.xco
+mmmmm_flist.txt

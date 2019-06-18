@@ -1,0 +1,22 @@
+Release 8.2i - xst I.31
+Copyright (c) 1995-2006 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to ./xst/projnav.tmp
+CPU : 0.00 / 1.69 s | Elapsed : 0.00 / 1.00 s
+ 
+--> 
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/Xilinx/ISEexamples/game/press.vhd" in Library work.
+Entity <press> compiled.
+Entity <press> (Architecture <Behavioral>) compiled.
+CPU : 0.61 / 2.30 s | Elapsed : 1.00 / 2.00 s
+ 
+--> 
+
+Total memory usage is 109012 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

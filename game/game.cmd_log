@@ -1,0 +1,1237 @@
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-tq144-4 "game.ngc" game.ngd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/Xilinx/ISEexamples/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/Xilinx/ISEexamples/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/game/game.ise" -intstyle ise -f game.ut game.ncd
+par -ise "D:/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+xst -ise "D:/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "D:/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+xst -ise "D:/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "D:/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "D:/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "D:/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "D:/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "D:/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "D:/game/game.ise" -intstyle ise -f game.ut game.ncd
+par -ise "E:/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "E:/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "E:/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "E:/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "E:/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "E:/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "E:/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "E:/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "E:/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "E:/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "E:/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "E:/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "E:/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "E:/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "E:/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "E:/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "E:/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "E:/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "E:/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "E:/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "E:/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "E:/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "E:/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "E:/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "E:/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "E:/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "E:/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "E:/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "E:/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "E:/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "E:/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "E:/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "E:/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "E:/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "E:/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "E:/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "E:/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "E:/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "E:/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "E:/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "E:/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "E:/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "E:/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "E:/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "E:/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "E:/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "E:/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "E:/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "E:/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "E:/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "E:/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "E:/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "E:/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "E:/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "E:/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "E:/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "E:/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "E:/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "E:/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "E:/game/game.ise" -intstyle ise -f game.ut game.ncd
+xst -ise "E:/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+xst -ise "E:/game/game.ise" -intstyle ise -ifn game.xst -ofn game.syr
+ngdbuild -ise "E:/game/game.ise" -intstyle ise -dd _ngo -nt timestamp -uc "game.ucf" -p xc3s100e-tq144-4 "game.ngc" game.ngd
+map -ise "E:/game/game.ise" -intstyle ise -p xc3s100e-tq144-4 -cm area -pr b -k 4 -c 100 -o game_map.ncd game.ngd game.pcf
+par -ise "E:/game/game.ise" -w -intstyle ise -ol std -t 1 game_map.ncd game.ncd game.pcf
+trce -ise "E:/game/game.ise" -intstyle ise -e 3 -l 3 -s 4 -xml game game.ncd -o game.twr game.pcf -ucf game.ucf
+bitgen -ise "E:/game/game.ise" -intstyle ise -f game.ut game.ncd

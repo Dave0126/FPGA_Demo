@@ -1,0 +1,55 @@
+m255
+13
+cModel Technology
+dD:\Xilinx\ISEexamples\game
+Egame
+w1195887798
+DP std textio K]Z^fghZ6B=BjnK5NomDT3
+DP ieee std_logic_textio 8YS?iX`WD1REQG`ZRYQGB2
+DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
+DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+FGAME.ant
+l0
+L27
+Vj=oYALN3UEFAKiQZZLSB_3
+OP;C;6.1b;31
+31
+o-explicit -93
+tExplicit 1 GenerateLoopIterationMax 100000
+Atestbench_arch
+DP std textio K]Z^fghZ6B=BjnK5NomDT3
+DP ieee std_logic_textio 8YS?iX`WD1REQG`ZRYQGB2
+DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
+DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+DE work game j=oYALN3UEFAKiQZZLSB_3
+l60
+L30
+VS4I4B]PzXd6VnhGX;Hb?h3
+OP;C;6.1b;31
+31
+M5 ieee std_logic_1164
+M4 ieee std_logic_arith
+M3 ieee std_logic_unsigned
+M2 ieee std_logic_textio
+M1 std textio
+o-explicit -93
+tExplicit 1 GenerateLoopIterationMax 100000
+Abehavioral
+DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
+DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+DE work game IeO=U924LbZzME9`?O81]0
+l44
+L40
+Vm:nO[6zzCZO4S_G;z2e>D1
+OP;C;6.1b;31
+31
+M3 ieee std_logic_1164
+M2 ieee std_logic_arith
+M1 ieee std_logic_unsigned
+o-explicit -93
+tExplicit 1 GenerateLoopIterationMax 100000
+Fgame.vhd
+w1195887176

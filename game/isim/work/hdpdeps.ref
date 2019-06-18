@@ -1,0 +1,9 @@
+V3 6
+FL $XILINX/ISEexamples/game/game.vhd 2007/11/24.14:52:56 I.31
+EN work/GAME 0            FL $XILINX/ISEexamples/game/game.vhd \
+      PB ieee/std_logic_1164 1147840849 PB ieee/std_logic_arith 1147840851 \
+      PB ieee/STD_LOGIC_UNSIGNED 1147840857
+AR work/game/Behavioral 0 FL $XILINX/ISEexamples/game/game.vhd EN work/GAME 0
+FL $XILINX/ISEexamples/game/GAME.ant 2007/11/24.15:07:44 I.31
+AR work/GAME/testbench_arch 0 FL $XILINX/ISEexamples/game/GAME.ant EN work/GAME 0 \
+      CP game

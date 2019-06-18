@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="MapLib" num="562" delta="unknown" >No environment variables are currently set.
+</msg>
+
+<msg type="info" file="MapLib" num="535" delta="unknown" >The following Virtex BUFG(s) is/are being retargetted to Virtex2 BUFGMUX(s) with input tied to I0 and Select pin tied to constant 0:
+<arg fmt="%s" index="1">BUFG symbol &quot;_cmp_gt0000_BUFG&quot; (output signal=_cmp_gt0000),
+BUFGP symbol &quot;clk_BUFGP&quot; (output signal=clk_BUFGP),
+BUFGP symbol &quot;reset_BUFGP&quot; (output signal=reset_BUFGP)</arg>
+</msg>
+
+<msg type="info" file="MapLib" num="533" delta="unknown" >The following XORCY(s) is/are demoted to LUTs because there is no MUXCY associated with them. Therefore, we cannot recognize the standard carry chain structure (<arg fmt="%d" index="1">5</arg> of <arg fmt="%d" index="2">9</arg> are listed):
+<arg fmt="%s" index="3">XORCY symbol &quot;Madd__sub0000_xor&lt;1&gt;&quot; (output signal=_sub0000&lt;1&gt;),
+XORCY symbol &quot;Madd__sub0001_xor&lt;1&gt;&quot; (output signal=_sub0001&lt;1&gt;),
+XORCY symbol &quot;Madd__sub0002_xor&lt;1&gt;&quot; (output signal=_sub0002&lt;1&gt;),
+XORCY symbol &quot;Madd__sub0003_xor&lt;1&gt;&quot; (output signal=_sub0003&lt;1&gt;),
+XORCY symbol &quot;Madd__sub0004_xor&lt;1&gt;&quot; (output signal=_sub0004&lt;1&gt;)</arg>
+</msg>
+
+<msg type="info" file="LIT" num="244" delta="unknown" >All of the single ended outputs in this design are using slew rate limited output drivers. The delay on speed critical single ended outputs can be dramatically reduced by designating them as fast outputs in the schematic.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372">Gated clock. Clock net _not0025 is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+</messages>

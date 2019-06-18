@@ -1,0 +1,124 @@
+--------------------------------------------------------------------------------
+-- Copyright (c) 1995-2003 Xilinx, Inc.
+-- All Right Reserved.
+--------------------------------------------------------------------------------
+--   ____  ____ 
+--  /   /\/   / 
+-- /___/  \  /    Vendor: Xilinx 
+-- \   \   \/     Version : 8.2i
+--  \   \         Application : ISE
+--  /   /         Filename : lk.vhw
+-- /___/   /\     Timestamp : Sat Nov 24 21:18:39 2007
+-- \   \  /  \ 
+--  \___\/\___\ 
+--
+--Command: 
+--Design Name: lk
+--Device: Xilinx
+--
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+USE IEEE.STD_LOGIC_TEXTIO.ALL;
+USE STD.TEXTIO.ALL;
+
+ENTITY lk IS
+END lk;
+
+ARCHITECTURE testbench_arch OF lk IS
+    FILE RESULTS: TEXT OPEN WRITE_MODE IS "results.txt";
+
+    COMPONENT game
+        PORT (
+            press1 : In std_logic;
+            press2 : In std_logic;
+            press3 : In std_logic;
+            press4 : In std_logic;
+            reset : In std_logic;
+            led : InOut std_logic_vector (0 To 7);
+            clk : In std_logic
+        );
+    END COMPONENT;
+
+    SIGNAL press1 : std_logic := '0';
+    SIGNAL press2 : std_logic := '0';
+    SIGNAL press3 : std_logic := '0';
+    SIGNAL press4 : std_logic := '0';
+    SIGNAL reset : std_logic := '0';
+    SIGNAL led : std_logic_vector (0 To 7) := "00000000";
+    SIGNAL clk : std_logic := '0';
+
+    SHARED VARIABLE TX_ERROR : INTEGER := 0;
+    SHARED VARIABLE TX_OUT : LINE;
+
+    constant PERIOD : time := 200 ns;
+    constant DUTY_CYCLE : real := 0.5;
+    constant OFFSET : time := 0 ns;
+
+    BEGIN
+        UUT : game
+        PORT MAP (
+            press1 => press1,
+            press2 => press2,
+            press3 => press3,
+            press4 => press4,
+            reset => reset,
+            led => led,
+            clk => clk
+        );
+
+        PROCESS    -- clock process for clk
+        BEGIN
+            WAIT for OFFSET;
+            CLOCK_LOOP : LOOP
+                clk <= '0';
+                WAIT FOR (PERIOD - (PERIOD * DUTY_CYCLE));
+                clk <= '1';
+                WAIT FOR (PERIOD * DUTY_CYCLE);
+            END LOOP CLOCK_LOOP;
+        END PROCESS;
+
+        PROCESS
+            BEGIN
+                -- -------------  Current Time:  85ns
+                WAIT FOR 85 ns;
+                press1 <= '1';
+                -- -------------------------------------
+                -- -------------  Current Time:  285ns
+                WAIT FOR 200 ns;
+                press1 <= '0';
+                -- -------------------------------------
+                -- -------------  Current Time:  485ns
+                WAIT FOR 200 ns;
+                press1 <= '1';
+                -- -------------------------------------
+                -- -------------  Current Time:  685ns
+                WAIT FOR 200 ns;
+                press1 <= '0';
+                -- -------------------------------------
+                -- -------------  Current Time:  885ns
+                WAIT FOR 200 ns;
+                press1 <= '1';
+                -- -------------------------------------
+                WAIT FOR 315 ns;
+
+                IF (TX_ERROR = 0) THEN
+                    STD.TEXTIO.write(TX_OUT, string'("No errors or warnings"));
+                    STD.TEXTIO.writeline(RESULTS, TX_OUT);
+                    ASSERT (FALSE) REPORT
+                      "Simulation successful (not a failure).  No problems detected."
+                      SEVERITY FAILURE;
+                ELSE
+                    STD.TEXTIO.write(TX_OUT, TX_ERROR);
+                    STD.TEXTIO.write(TX_OUT,
+                        string'(" errors found in simulation"));
+                    STD.TEXTIO.writeline(RESULTS, TX_OUT);
+                    ASSERT (FALSE) REPORT "Errors found during simulation"
+                         SEVERITY FAILURE;
+                END IF;
+            END PROCESS;
+
+    END testbench_arch;
+
